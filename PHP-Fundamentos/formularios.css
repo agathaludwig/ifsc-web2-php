@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*impedindo a quebra de leiaute com elementos flutuados na página*/
+html {
+	min-width: 1280px; /*impede que o navegador mude os elementos de lugar a partir do momento em que ele atinge a largura mínima da página*/
+}
+
+body {
+	font-family: Roboto;
+	margin: 0;
+}
+p {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	background: #eff3f8;
+	text-shadow: -1px 1px rgba(255,255,255,0.6), -2px 1px 1px rgba(0,0,0,0.6);
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.6);
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+label.alinha {
+	width: 230px;
+	display: inline-block;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	width: 550px;
+	height: 170px;
+	box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.5);
+	border-radius: 10px; /*arredondamento das bordas*/
+	padding: 20px;
+	margin: auto;
+}
+
+/*formatar o estado focus das caixas de texto*/
+input[type="text"]:focus {
+	border: 1px solid #000;
+	box-shadow: 3px 3px 3px rgba(173, 123, 0, 0.5);
+	outline: none; /*remove a cor padrão que o Chrome utiliza ao redor das caixas de formulário*/
+}
+
+/*obriga o navegador a aplicar a fonte personalizada a todos os controles de formulário especificados na regra*/
+input, button {
+	font-family: Roboto;
+}
+
+button {
+	display: block;
+	height: 40px;
+	width: 200px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #555;
+	background: #eee;
+}

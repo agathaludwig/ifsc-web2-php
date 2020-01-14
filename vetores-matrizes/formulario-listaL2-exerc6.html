@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Exercício 6 </title> 
+		<link rel="stylesheet" href="formata-matrizes.css">
+</head> 
+
+<body> 
+	<h1> Matrizes com PHP </h1>
+	
+	<form action="listaL2-exerc6.php" method="post">
+		<fieldset>
+			<legend> Exercício 6 </legend>
+			
+			<label class="alinha"> Forneça o número da conta: </label>
+			<input type="text" name="numConta" autofocus> <br>	
+			
+			<label class="alinha"> Forneça um valor em reais: </label>
+			<input type="number" name="valor" step="0.01" min="0"> <br> 	
+
+			<input type="radio" name="transacao" value="1" class="alinha" /> 
+			<label class="alinha1">Depósito  <br>
+			<input type="radio" name="transacao" value="2" class="alinha"/> 
+			<label class="alinha1"> Saque <br>
+
+			<label class="alinha"> Selecione uma operação: </label>
+			<select name="operacoes">
+<!-- item a--> 	<option value="1">Atualizar saldo</option>
+<!-- item b--> 	<option value="2">Maior saldo</option>
+
+<!-- item c--> 	<option value="3">Novos clientes</option>
+			</select> <br>
+
+			<button type="submit" name="executar"> Executar </button>
+			<br>	
+		</fieldset>
+	</form>    
+</body> 
+</html> 

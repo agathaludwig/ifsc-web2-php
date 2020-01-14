@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
+
+body {
+	font-family: 'Big Shoulders Text', cursive;	
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid #999;
+	margin: 0;
+	background: #20B2AA;
+	text-shadow: 3px 3px 3px rgba(255,255,255,0.6);
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+fieldset {
+	width: 60%;
+	margin: 30px auto;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	padding: 15px;
+	background: rgba(64,224,208,0.4);
+}
+
+label.alinha {
+	width: 50%;
+	display: inline-block;
+	margin-top: 5px;
+	text-align: right;
+}
+
+input.maior { /*[name="uc"]*/
+	width: 40%;
+}
+
+
+input[type=radio] {
+	margin-left: 50%;
+}
+
+input[type=checkbox] {
+	margin-left: 50%;
+}
+
+input {
+	font-family: 'Big Shoulders Text', cursive;	
+}
+
+button {
+	display: block;
+	font-family: 'Big Shoulders Text', cursive;	
+	font-size: 14px;
+	height: 30px;
+	width: 150px;
+	font-weight: bold;
+	margin: 15px auto 0px auto;
+
+}
+
+p {
+	width: 50%;
+	padding: 20px;
+	background: #ccc;
+	margin: 15px auto;
+	text-align: center;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+
+table {
+	margin: auto;
+	width: 60%;
+	border: 1px solid #a3a3a3;
+	border-spacing: 1px;
+	text-align: center;
+}
+
+th {
+	background: #a3a3a3;
+}
+td {
+	padding-left: 10px;
+}
+caption {
+	margin-bottom: 5px;
+	background: rgb(155, 205, 158);
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}

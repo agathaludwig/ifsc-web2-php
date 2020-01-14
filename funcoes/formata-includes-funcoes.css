@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+body {
+	margin: 0;
+	font-family: "Titillium Web";
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin: 0;
+	background-color: #2f4e6f;
+	color: #fff;
+	margin-bottom: 20px;	
+	position: sticky;
+	top: 0;
+}
+
+label.alinha {
+	width: 370px;
+	display: inline-block; /*converte um label em elemento nível de bloco*/
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+label.centro {
+	display: block;
+	text-align: center;
+}
+
+.maior {
+	width: 350px;
+}
+
+select, input, button {
+	font-family: "Titillium Web";
+}
+
+fieldset {
+	width: 70%;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	margin: 30px auto;
+	padding: 20px;
+	background: #eee;
+}
+
+button {
+	display: block; /* só é possível centralizar (margin auto) se transformá-lo em bloco) */
+	margin: auto;
+	width: 300px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+/* formatação de tags que serão geradas pelo php */
+p {
+	border: 1px solid #eee;
+	width: 50%;
+	background: #eee;
+	padding: 30px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+caption { /* legenda da tabela - 
+													tb gerada automaticamente pelo php */
+	text-align: right;
+	margin-bottom: 8px;
+}
+
+table {
+	width: 40%;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	border-collapse: collapse;	
+}
+
+td, th {
+	border: 1px solid #ccc;
+}
+
+td {
+	/*padding-left: 10px; */
+	text-align: center;
+}
+
+th {
+	background: #2f4e6f;
+	color: #fff;
+}
+
+div.botoes {
+	text-align: center;
+}
+.linha {
+	display: inline;
+}
+
+/*
+button a:hover {
+	background: #808080;
+	text-align: center;
+}
+
+*/
+
+
+
+
+
+

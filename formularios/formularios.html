@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Formulários </title> 
+		<link rel="stylesheet" href="formularios.css">
+</head> 
+
+<body> 
+	<h1> Formulários com HTML5 e CSS3 </h1>
+	<!-- atributos importantes da tag form: action=indica qual arquivo no servidor que irá receber e processar os dados passados ao formulário; enctype=obrigatório quando precisamos que o usuário faça upload de arquivos; e method=especifica a maneira pela qual o navegador fará o envio de dados ao servidor. Prefira, sempre, o método POST-->
+	<form enctype="multipart/form-data" action="recebe-dados-formulario.php" method="post">
+		<fieldset class="esquerda">
+			<legend> Dados pessoais </legend>
+			
+			<label class="alinha"> Nome: </label>
+			<input type="text" name="nome-do-usuario" placeholder="Seu nome completo" autofocus> <br>
+			
+			<label class="alinha"> E-mail: </label>
+			<input type="email" name="e-mail" required>
+			<br>
+			
+			<label class="alinha"> Data de nascimento: </label>
+			<input type="date" name="nascimento"> <br>
+			
+			<label class="alinha"> Forneça uma senha de acesso: </label>
+			<input type="password" name="senha"> <br>
+			
+			<label class="alinha"> Sua idade: </label>
+			<input type="number" name="idade" step="1" min="0" max="130"> <br>
+			
+			<label class="alinha"> Renda mensal (em R$): </label>
+			<input type="number" name="mensal-mensal" min="0" max="30000" step="0.01"> <!--para qualquer quantia de casas decimais, usar step="any"--> <br>
+			
+			<label class="alinha"> Enviar fotos aos servidor: </label>
+			<input type="file" name="fotos" multiple>
+		</fieldset>
+		
+		<fieldset class="direita">
+			<legend> Outras informações </legend>
+			
+			<label> Seu local de férias preferido: </label> <br>
+			<input type="radio" name="ferias" value="Bahmas"> <label> Fazer um cruzeiro pelas Bahamas </label> <br>
+			
+			<input type="radio" name="ferias" value="Porto de Galinhas" checked> <label> Porto de Galinhas, em Pernambuco </label> <br> <br>
+			
+			<label> Nas suas férias, você se locomove por: </label> <br>
+			<input type="checkbox" name="locomocao[]" value="Avião"> <label> Avião </label> <br>
+			
+			<input type="checkbox" name="locomocao[]" value="Automóvel" checked> <label> Automóvel </label> <br> <br>
+			
+			<label> Selecione um destino para as próximas férias: </label>
+			<select name="destino-ferias">
+				<option> Europa </option>
+				<option selected> Nordeste </option>
+				<option> Estados Unidos </option>
+			</select> <br> <br>
+			
+			<label class="topo"> Sugira, aqui, outros roteiros de férias: </label>
+			<textarea name="sugestao" placeholder="Deixe, aqui, suas sugestões..."></textarea>		
+		</fieldset>
+		
+		<div class="botoes">
+			<button type="submit" name="enviar-dados"> Cadastrar dados </button>
+			
+			<button type="button" onclick="alert('Dados preenchidos com sucesso!');"> Executar JavaScript </button>	
+			</div>	
+	</form>    
+</body> 
+</html> 
